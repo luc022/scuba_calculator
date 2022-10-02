@@ -1,184 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
     <title>Scuba calculator</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <header>
-        <div class="title">
-            SCUBA CALCULATOR
-        </div>
+      <div class="title">
+        SCUBA CALCULATOR
+      </div>
     </header>
- 
+
     <main>
-        <div class="SAC">
-            <div class="sacTitle">
-                SAC
-            </div>
+      <div class="SAC">
+        <div class="sacTitle">
+          SAC
+        </div>
         <div class="wrapper">
-            <div>
-                <input type="number" name="averageDepth" placeholder="average depth" size="14" required>
-            </div>
-        
-            <div>
-                <input type="number" name="bottomTime" placeholder="bottom time (minutes)" size="14" required>
-            </div>
-        
-            <div>
-                <input type="number" name="tankVolume" placeholder="tank volume (liters)" size="14" required>
-            </div>
-        
-            <div>
-                <input type="number" name="tankPressure" placeholder="tank pressure on start (bar)" size="14" required>
-            </div>
 
-            <div>
-                <input type="number" name="leftAir" placeholder="tank pressure on the end (bar)" size="14" required>
+          <input type="number" name="averageDepth" placeholder="average depth" size="14" required>
+
+
+
+          <input type="number" name="bottomTime" placeholder="bottom time (minutes)" size="14" required>
+
+
+
+          <input type="number" name="tankVolume" placeholder="tank volume (liters)" size="14" required>
+
+
+
+          <input type="number" name="tankPressure" placeholder="tank pressure on start (bar)" size="14" required>
+
+
+          <input type="number" name="leftAir" placeholder="tank pressure on the end (bar)" size="14" required>
+
+
+          <button type="button" name="calculateSac">
+            calculate
+          </button>
+
+          <div class="output">
+            <div class="sacOutput">
             </div>
-        
-            <button type="button" name="calculateSac">
-                calculate
-            </button>
-        
-            <div class="output">
-                <div class="sacOutput">
-                    </div>
-            </div>
+          </div>
         </div>
+      </div>
+
+      </div>
+
+      <div class="MOD">
+        <div class="modTitle">
+          MOD
         </div>
+        <div class="wrapper">
 
-        </div>
+            <input type="number" name="nitrox" placeholder="EAN" size="14" required>
 
-        <div class="MOD">
-            <div class="modTitle">
-                MOD
+
+          <button type="button" name="calculateMod">
+            calculate
+          </button>
+
+          <div class="output">
+            <div class="modResults">
+              <div class="mod12"></div>
+              <div class="mod14"></div>
+              <div class="mod16"></div>
             </div>
-            <div class="wrapper">
-            <div>
-                <input type="number" name="nitrox" placeholder="EAN" size="14"  required>
-            </div>
-            
-            <button type="button" name="calculateMod">
-                calculate
-            </button>
-            
-            <div class="output">
-                <div class="modResults">
-                    <div class="mod12"></div>
-                    <div class="mod14"></div>
-                    <div class="mod16"></div>
-                </div>
-                </div>
-            </div>
-
-
+          </div>
         </div>
 
-        <div class="bestNitrox">
-            <div class="bestNitroxTitle">
-                Best Nitrox
-            </div>
-            
-            <div>
-                <input type="number" name="plannedDepth" placeholder="planned depth" size="14" required>
-            </div>
-            
-            <div>
-                <input type="number" name="desiredPPO" placeholder= "desired PP O2" size="14" required>
-            </div>
 
-            <button type="button" name="calculateBestNitrox">
-                calculate
-            </button>
-            
-            <div class="output">
-                <div class="nitroxResult">
-                     
-                </div>
-            
-            </div>
+      </div>
+
+      <div class="bestNitrox">
+        <div class="bestNitroxTitle">
+          Best Nitrox
         </div>
+        <div class="wrapper">
 
-        <div class="tankAirVolume">
-            <div class="tankAirVolumeTitle">
-             Tank Air Volume
-            </div>
+          <input type="number" name="plannedDepth" placeholder="planned depth" size="14" required>
 
-            <div>
-                <input type="number" name="tankCapacity" placeholder="tank capacity (liters)" size="14" required>
-            </div>
+          <input type="number" name="desiredPPO" placeholder="desired PP O2" size="14" required>
+          
 
-            <div>
-                <input type="number" name="pressure" placeholder="pressure" size="14" required>
-            </div>
+        <button type="button" name="calculateBestNitrox">
+          calculate
+        </button>
+</div>
+        <div class="output">
+          <div class="nitroxResult">
 
-            <button type="button" name="calculateTankAirVolume">
-                calculate
-            </button>
-            <div class="output">
-                <div class="tankAirVolumeResult"></div>
-            </div>
-        </div>
+          </div>
 
         </div>
+      </div>
 
-        <div class="neededAir">
-           <div class="neededAirTitle">
-                Needed Air
-            </div>
-
-            <div>
-                <input type="number" name="SAC" placeholder="SAC" size="14" required>
-            </div>
-
-            <div>
-                <input type="number" name="depth" placeholder="depth" size="14" required>
-            </div>
-
-            <div>
-                <input type="number" name="diveTime" placeholder="bottom time (min)" size="14" required>
-            </div>
-            
-            <button type="button" name="calculateNeededAir">
-                calculate
-            </button>
-            
-            <div class="output">
-                <div class="neededAirResult">
-                   </div>
-            </div>
+      <div class="tankAirVolume">
+        <div class="tankAirVolumeTitle">
+          Tank Air Volume
         </div>
-    </div>
+<div class="wrapper">
+      
+          <input type="number" name="tankCapacity" placeholder="tank capacity (liters)" size="14" required>
+      
 
-        <div class="partialPressure">
-            <div class="partialPressureTitle">
-                Partial Pressure
-            </div>
+       
+          <input type="number" name="pressure" placeholder="pressure" size="14" required>
+       
 
-            <div>
-                <input type="text" name="EAN" placeholder="EAN" size="14" required>
-            </div>
-            
-            <div>
-                <input type="text" name="depth2" placeholder="depth" size="14" required>
-            </div>
-
-            <button type="button" name="calculatePartialPressure">
-                calculate
-            </button>
-            
-            <div class="output">
-                <div class="partialPressureResult">
-                   </div>
-            </div>
-
+        <button type="button" name="calculateTankAirVolume">
+          calculate
+        </button>
         </div>
-     
+        <div class="output">
+          <div class="tankAirVolumeResult"></div>
+        </div>
+      </div>
+
+
+
+      <div class="neededAir">
+        <div class="neededAirTitle">
+          Needed Air
+        </div>
+<div class="wrapper">
+
+          <input type="number" name="SAC" placeholder="SAC" size="14" required>
+   
+
+    
+          <input type="number" name="depth" placeholder="depth" size="14" required>
+   
+
+ 
+          <input type="number" name="diveTime" placeholder="bottom time (min)" size="14" required>
+   
+
+        <button type="button" name="calculateNeededAir">
+          calculate
+        </button>
+        </div>
+
+        <div class="output">
+          <div class="neededAirResult">
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="partialPressure">
+        <div class="partialPressureTitle">
+          Partial Pressure
+        </div>
+<div class="wrapper">
+  
+          <input type="text" name="EAN" placeholder="EAN" size="14" required>
+    
+    
+          <input type="text" name="depth2" placeholder="depth" size="14" required>
+    
+
+        <button type="button" name="calculatePartialPressure">
+          calculate
+        </button>
+        </div>
+
+        <div class="output">
+          <div class="partialPressureResult">
+          </div>
+        </div>
+
+      </div>
+
     </main>
 
     <footer>
@@ -188,11 +189,12 @@
 
 
 
-<script type="text/javascript" src="sac.js"></script> 
-<script type="text/javascript" src="mod.js"></script> 
-<script type="text/javascript" src="bestNitrox.js"></script> 
-<script type="text/javascript" src="tankAirVolume.js"></script> 
-<script type="text/javascript" src="neededAir.js"></script> 
-<script type="text/javascript" src="partialPressure.js"></script> 
-</body>
+    <script type="text/javascript" src="sac.js"></script>
+    <script type="text/javascript" src="mod.js"></script>
+    <script type="text/javascript" src="bestNitrox.js"></script>
+    <script type="text/javascript" src="tankAirVolume.js"></script>
+    <script type="text/javascript" src="neededAir.js"></script>
+    <script type="text/javascript" src="partialPressure.js"></script>
+  </body>
+
 </html>
