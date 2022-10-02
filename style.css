@@ -1,10 +1,17 @@
-
+body {
+   background-color: #e2e2e2;
+}
 
 .title {
    text-align: center;
-   font-family: "Verdana", sans-serif;
-   background-color:#15883e;
-   font-size: 50px;
+   font-family: 'Trebuchet MS', sans-serif;
+   background-color:#77996c;
+   font-size: 35px;
+   font-weight: 600;
+   border-radius: 5px;
+   padding: 10px 20px;
+   box-shadow: 2px 2px 2px 2px #4d4d4d94;
+ 
    }
    
    .SAC {
@@ -13,85 +20,102 @@
    
    .sacTitle {
    text-align: center;
-   font-family: "Verdana", sans-serif;
-   background-color:#15883e;
+   font-family: 'Trebuchet MS', sans-serif;
+   background-color:#77996c;
    margin-top: 2%;
    font-size: 32px;
    margin-bottom: 5%;
-   
+   border-radius: 5px;
+   padding: 10px 20px;
+   box-shadow: 2px 2px 2px 2px #4d4d4d94;
    }
    
    .wrapper {
      display: flex;
      flex-direction: column;
      align-items: center;
+     
    }
    
    .modTitle {
        text-align: center;
-       font-family: "Verdana", sans-serif;
-       background-color:#15883e;
+       font-family: 'Trebuchet MS', sans-serif;
+       background-color:#77996c;
        margin-top: 2%;
        font-size: 32px;
        margin-bottom: 3%;
+       border-radius: 5px;
+       padding: 10px 20px;
+       box-shadow: 2px 2px 2px 2px #4d4d4d94;
        }
    
    .tankAirVolumeTitle {
            text-align: center;
-           font-family: "Verdana", sans-serif;
-           background-color:#15883e;
+           font-family: 'Trebuchet MS', sans-serif;
+           background-color:#77996c;
            margin-top: 2%;
            font-size: 32px;
            margin-bottom: 3%;
-   
+           border-radius: 5px;
+           padding: 10px 20px;
+         box-shadow: 2px 2px 2px 2px #4d4d4d94;
     }
    
    
         .partialPressureTitle{
              text-align: center;
-             font-family: "Verdana", sans-serif;
-             background-color:#15883e;
+             font-family: 'Trebuchet MS', sans-serif;
+             background-color:#77996c;
              margin-top: 2%;
              font-size: 20px;
              margin-bottom: 3%;
-   
+             border-radius: 5px;
+             padding: 10px 20px;
+            box-shadow: 2px 2px 2px 2px #4d4d4d94;
              
           }
    
           .bestNitroxTitle {
             text-align: center;
-            font-family: "Verdana", sans-serif;
-            background-color:#15883e;
+            font-family: 'Trebuchet MS', sans-serif;
+            background-color:#77996c;
             margin-top: 2%;
             font-size: 32px;
             margin-bottom: 3%;
-   
+            border-radius: 5px;
+            padding: 10px 20px;
+           box-shadow: 2px 2px 2px 2px #4d4d4d94;
             }
    
             .neededAirTitle {
                text-align: center;
-               font-family: "Verdana", sans-serif;
-               background-color:#15883e;
+               font-family: 'Trebuchet MS', sans-serif;
+               background-color:#77996c;
                margin-top: 2%;
                font-size: 32px;
                margin-bottom: 3%;
-   
+               border-radius: 5px;
+               padding: 10px 20px;
+               box-shadow: 2px 2px 2px 2px #4d4d4d94;
                }
    
                .partialPressureTitle {
                   text-align: center;
-                  font-family: "Verdana", sans-serif;
-                  background-color:#15883e;
+                  font-family: 'Trebuchet MS', sans-serif;
+                  background-color:#77996c;
                   margin-top: 2%;
                   font-size: 32px;
                   margin-bottom: 3%;
+                  border-radius: 5px;
+                  padding: 10px 20px;
+                   box-shadow: 2px 2px 2px 2px #4d4d4d94;
                }
    
                input {
                   font-family: 'Roboto', sans-serif;
                   color: #333;
                   font-size: 0.9rem;
-                   margin: 0 auto;
+                   
                   padding: 1.5rem 2rem;
                   border-radius: 0.2rem;
                   background-color: rgb(255, 255, 255);
@@ -143,4 +167,9 @@
          
                   
                }
+           @media (orientation: portrait) and (max-width: 500px) {
+   input {
+     width: 80%;
+   }
+   }
    
